@@ -1,0 +1,46 @@
+{
+  "name": "@ai-sprites/designer",
+  "version": "0.1.0",
+  "description": "独立设计角色：完成用户流程、界面状态与清晰的设计交接。",
+  "type": "module",
+  "bin": {
+    "sprite-designer": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "templates",
+    "skills",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "Davy Chen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-sprites/designer.git"
+  },
+  "homepage": "https://github.com/ai-sprites/designer#readme",
+  "bugs": {
+    "url": "https://github.com/ai-sprites/designer/issues"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "skills",
+    "designer"
+  ],
+  "sprite": {
+    "id": "designer",
+    "role": true,
+    "practices": [],
+    "baseSkills": []
+  }
+}
