@@ -1,6 +1,8 @@
 # 工具适配与实际验证
 
-Sprite 只生成所选工具的项目文件。角色正文来自本包的一份 Markdown；可选 Skill 随自身参考一起复制，不修改宿主全局配置。安装后在目标项目开始新会话或刷新宿主发现。
+README 的聊天指导与详细手册是当前接入方式。AI 按实际客户端机制放置角色或完整 Skill；没有原生机制时可以显式读取普通 Markdown。当前仓库不提供安装器、npm 入口或安装记录机制。
+
+本页保留三种目标格式及 **2026-09-05 的历史宿主检查**，用于判断客户端能力。历史检查当时使用生成文件，不能据此推定当前手工放置已在所有客户端完成发现或运行。当前接入步骤见 [手册](installation.md)，实际结果仍应在目标项目核对。
 
 ## 官方发现路径
 
@@ -29,7 +31,7 @@ Codex 独立角色文件包含 `name`、`description`、`developer_instructions`
 
 没有修改用户全局配置、自动登录或更换宿主版本。官方文档可能领先于本机 CLI；本机 Codex 0.144.1 不接受文档中的 `agents.enabled` 配置形式，不要为本包直接加入该设置。项目是否受信任也影响配置层加载；本轮临时项目层被禁用，命令级信任覆盖没有解除，未据此推断所有环境的支持情况。Windows、Linux、IDE 内的代理调用尚未实际验收。
 
-## 如何使用已安装内容
+## 使用已放置的资源
 
 Claude Code 可在目标项目使用 `claude --agent sprite-designer`；Copilot CLI 可使用 `copilot --agent=sprite-designer`。需要宿主已经登录并允许项目使用；本轮验证限制见上表。
 
@@ -41,4 +43,4 @@ Codex 支持对应原生角色能力时，可以指明 `sprite-designer`。若�
 
 Skill 可以在任务中明确请求使用名称；若宿主没有自动发现，可明确给出安装后的 `SKILL.md` 路径，按需读取同目录参考。角色缺少某项可选实践，不妨碍处理依据充分的工作。
 
-桥接 Skill 自带 `scripts/read.mjs`，即使宿主发现受限，也能按 README 的 Node.js 命令直接运行；这只验证脚本使用，不代表宿主已加载 Skill。
+共享资料读取见 [artifact-bridge 手册](https://github.com/ai-sprites/artifact-bridge)。
