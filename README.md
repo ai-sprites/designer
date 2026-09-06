@@ -24,7 +24,7 @@
 
 本角色没有附带可选实践，主源即可独立使用。
 
-[LICENSE](LICENSE) 是资源许可；接入手册和 [工具适配说明](docs/tool-support.md) 用于指导操作，不必复制成业务文档。
+接入手册和 [工具适配说明](docs/tool-support.md) 用于指导操作，不必复制成业务文档。
 
 ## 开始使用
 
@@ -41,5 +41,3 @@
 需要追加、更新或移除资源时，直接说明目标。AI 对照明确版本与现有文件比较，保留自定义，只处理指定范围；具体规则见 [手册](docs/installation.md#已有内容与后续维护)。
 
 需要读取共享 Git 资料时，可单独使用 [artifact-bridge](https://github.com/ai-sprites/artifact-bridge)。
-
-从 [create-ai-native-sdlc](https://github.com/davych/my-sdlc-workflow) 提取并收敛职责，使用 [MIT 许可](LICENSE)，保留 Davy Chen 的原有版权。
